@@ -1,1 +1,7 @@
 100 Projects in Python/.idea
+100 Projects in Python/16- Building a Coffee Machine/__pycache__/.pyc
+
+100 Projects in Python/16- Building a Coffee Machine/__pycache__/
+
+100 Projects in Python/16- Building a Coffee Machine/__pycache__/coffee_maker.cpython-39.pyc
+
