@@ -13,10 +13,18 @@ def shape(sides, length):
     tim.color(red, green, blue)
     for _ in range(sides):
         tim.forward(length)
-        tim.right(360/sides)
+        tim.right(360 / sides)
 
-for i in range(3,10):
-    shape(i, 100)
+# def random_walk():
+#     direction = (90,270)
+#     tim.right(random.choice(direction))
+#     tim.forward(50)
+# for _ in range(100):
+#     random_walk()
+
+for _ in range(10):
+    shape(_,100)
 
 
 screen.exitonclick()
+
