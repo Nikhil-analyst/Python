@@ -15,16 +15,30 @@ def shape(sides, length):
         tim.forward(length)
         tim.right(360 / sides)
 
-# def random_walk():
-#     direction = (90,270)
-#     tim.right(random.choice(direction))
-#     tim.forward(50)
-# for _ in range(100):
-#     random_walk()
+def random_walk():
+    red = (random.randint(0,255))
+    green = (random.randint(0,255))
+    blue = (random.randint(0,255))
+    tim.color(red, green, blue)
+    direction = (0,90,180,270)
+    tim.setheading(random.choice(direction))
+    tim.forward(20)
 
-for _ in range(10):
-    shape(_,100)
+tim.pensize()
+tim.speed("fastest")
 
+
+def draw_circle(radius, rotate):
+    red = (random.randint(0,255))
+    green = (random.randint(0,255))
+    blue = (random.randint(0,255))
+    tim.color(red, green, blue)
+    tim.setheading(rotate)
+    tim.circle(radius)
+angle =0
+while angle <= 360:
+    angle += 5
+    draw_circle(radius= 100,rotate = angle )
 
 screen.exitonclick()
 
