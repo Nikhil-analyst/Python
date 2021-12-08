@@ -19,6 +19,6 @@
 
 # print(type(5).__name__)
 
-import twitter
-
-print("Hello")
+# import twitter
+#
+# print("Hello")
