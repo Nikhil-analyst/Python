@@ -22,3 +22,24 @@
 # import twitter
 #
 # print("Hello")
+
+# largest = None
+# smallest = None
+lista = []
+
+while True:
+    num = input("Enter Number: ")
+    if num == "done":
+        print("Invalid Input")
+        print("Maximum No.", max(lista))
+        print("Maximum No.", min(lista))
+        break
+    else:
+        try:
+            num = int(num)
+            lista.append(num)
+
+        except:
+            print("Invalid Input")
+
+

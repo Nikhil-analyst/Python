@@ -22,3 +22,9 @@ class Paddle(Turtle):
         new_y = self.ycor() - 20
         self.goto(self.xcor(), new_y)
 
+
+    def check_color(self):
+        if self.ycor() > 160 or self.ycor() < -250:
+            self.color("red")
+        else:
+            self.color("white")
