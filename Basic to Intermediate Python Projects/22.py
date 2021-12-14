@@ -2,7 +2,26 @@
 
 from pprint import pprint
 
-d = dict(a = list(range(1, 11)), b = list(range(11, 21)), c = list(range(21, 31)))
+d = {}
+
+a = []
+b= []
+c = []
+
+for value in range (1,11):
+    a.append(value)
+for value in range (11,21):
+    b.append(value)
+for value in range (21,31):
+    c.append(value)
+
+d['a'] = a
+d['b'] = b
+d['c'] = c
+
 pprint(d)
 
-#Video question so that user sees the pretty print
+# Check the one liner code below
+
+# d = dict(a = list(range(1, 11)), b = list(range(11, 21)), c = list(range(21, 31)))
+# pprint(d)
