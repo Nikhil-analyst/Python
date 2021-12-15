@@ -6,3 +6,4 @@ def foo():
     return c
 c = 3
 print(foo())
+print(c)

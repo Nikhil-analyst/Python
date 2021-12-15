@@ -18,3 +18,17 @@ def count_words_re(filepath):
         return len(string_list)
 
 print(count_words_re("words2.txt"))
+
+
+## Other Solution
+
+def count_words(words):
+    with open(words, 'r') as file:
+        string = file.read()
+        string_list = string.split(" ")
+        return len(string_list)
+words1= ("C:\\Users\\Nikhil Raj\\OneDrive\Desktop\\Study\\Python\\Basic to Intermediate Python Projects\\words1.txt")
+words1 = words1.replace("\\", "/")
+print(words1)
+# print("Nick\\Raj")
+print(count_words(words1))
