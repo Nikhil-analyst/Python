@@ -1,7 +1,17 @@
-#Create a script that generates a file where all letters of English alphabet are listed two in each line
+#Create a script that generates a file where all letters
+# of English alphabet are listed two in each line
+
 
 import string
 
-with open("letters.txt", "w") as file:
-    for letter1, letter2 in zip(string.ascii_lowercase[0::2], string.ascii_letters[1::2]):
-        file.write(letter1 + letter2 + "\n")
+c= [(letters) for letters in string.ascii_lowercase]
+
+with open("nickletters", 'w') as file:
+    for count in range(0, 25,1):
+        file.write(c[count] + c[count+1] + "\n")
+
+print(c)
+
+
+
+
