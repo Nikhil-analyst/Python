@@ -9,4 +9,5 @@ d = {"employees":[{"firstName": "John", "lastName": "Doe"},
           {"firstName": "Jessy", "lastName": "Petter"}]}
 
 with open("company1.json", "w") as file:
-    json.dump(d, file, indent=4, sort_keys=True)
+    json.dump(d, file, indent=2, sort_keys=True)
+
