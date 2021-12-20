@@ -6,3 +6,4 @@ r = requests.get("http://www.pythonhow.com")
 print(r.text[:100])
 
 print(__name__)
+print(__name__)
