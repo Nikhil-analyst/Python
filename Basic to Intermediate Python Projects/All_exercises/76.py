@@ -2,4 +2,6 @@
 
 from datetime import datetime
 
-print(datetime.now().strftime("Today is %A, %B %d, %Y"))
+print(datetime.now().strftime("Today is %A, %B %d, %t,%H:%M"))
+print(datetime.datetime.now().year)
+# help(datetime.now())
