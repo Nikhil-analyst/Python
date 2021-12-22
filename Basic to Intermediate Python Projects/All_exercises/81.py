@@ -9,7 +9,6 @@ while True:
     else:
         print("Username is fine")
         break
-
 while True:
     notes = []
     psw = input("Enter password: ")
