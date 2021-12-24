@@ -8,3 +8,11 @@ import pandas
 #
 # for index, row in data[:5].iterrows():
 #     print(row["country"])
+import  pandas as pd
+
+data = pandas.read_csv("countries_by_area.txt")
+data['Density'] = data['population_2013'] / data['area_sqkm']
+data = data.sort_values(by= ['Density'], ascending= False)
+# print(data[0:5]['country'])
+for k in data[0:5]["country"]:
+    print(k)
