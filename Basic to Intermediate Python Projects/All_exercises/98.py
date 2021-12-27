@@ -1,5 +1,5 @@
 #Create a program that asks the user to submit text through a GUI
-
+import tkinter
 from tkinter import *
 
 window = Tk()
@@ -33,3 +33,5 @@ button_close = Button(window, text="Save and Close", command=close)
 button_close.grid(row=0,column=3)
 
 window.mainloop()
+
+

@@ -13,4 +13,4 @@ print(rows)
 df = pandas.DataFrame.from_records(rows)
 df.columns =["Rank", "Country", "Area", "Population"]
 print(df)
-df.to_csv("countries_big_area.csv", index=False)
+# df.to_csv("countries_big_area.csv", index=False)
